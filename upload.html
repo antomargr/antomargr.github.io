@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Upload</title>
+
+		<!-- Google Fonts link from https://fonts.google.com -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+
+		<!-- My CSS file -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body>
+		<!-- Header with logo and navigation -->
+		<header>
+			<div class="header-content">
+				<!-- Logo image -->
+				<div id="logo">
+					<img src="./assets/fleatradelogo.svg" alt="Flea Trade Logo" width="230" height="50" />
+				</div>
+
+				<!-- Search box -->
+				<div class="search-box">
+					<input type="search" id="search-input" placeholder="Search" />
+				</div>
+
+				<!-- Navigation menu -->
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="messages.html">Messages</a></li>
+						<li><a href="my-posts.html">My Posts</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main content starts here -->
+		<main>
+			<div id="upload-page">
+				<h2>Upload a photo of your item</h2>
+
+				<!-- White box with border from W3Schools -->
+				<div id="upload-box">
+					<p>Add some clear photos to attract more attention (at least one photo is required).</p>
+
+					<!-- Dashed box for upload button -->
+					<div id="dashed-upload">
+						<button class="orange-button">Upload Photos</button>
+					</div>
+
+					<!-- Description text -->
+					<p>Describe your item, its condition and your estimated price. Please note this post needs to be approved by our mediator. It takes 1 to 2 hours.</p>
+
+					<!-- Text area for description -->
+					<textarea id="description" placeholder="Enter your message here"></textarea>
+
+					<!-- Continue button -->
+					<button class="orange-button">Continue</button>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer with links -->
+		<footer>
+			<ul>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Your privacy</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
