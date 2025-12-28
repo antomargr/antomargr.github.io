@@ -65,7 +65,7 @@ header {
 	font-size: 16px;
 }
 
-/* Hover effect - orange color */
+/* Hover effect - orange color. https://www.youtube.com/watch?v=PwWHL3RyQgk&t=721s */
 .nav ul li a:hover {
 	color: #e6772d;
 }
@@ -255,7 +255,7 @@ p {
 	margin-bottom: 24px;
 }
 
-/* Dashed box for upload button */
+/* Dashed box for upload button. https://www.w3schools.com/cssref/playdemo.php?filename=playcss_border-style&preval=dashed*/
 #dashed-upload {
 	margin: 24px 0;
 	border: 2px dashed #dddddd;
@@ -383,7 +383,7 @@ p {
 	margin-top: 24px;
 }
 
-/* Map container */
+/* Map container - embedded Google Maps from W3Schools tutorial */
 #map-container {
 	width: 100%;
 	max-width: 800px;
