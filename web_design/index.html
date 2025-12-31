@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+
+		<!-- Google Fonts link from https://fonts.google.com -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
+
+		<!-- Slider CSS file -->
+		<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet" />
+
+		<!-- My CSS file -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body>
+		<!-- Header with logo and navigation -->
+		<header>
+			<div class="header-content">
+				<!-- Logo image -->
+				<div id="logo">
+					<img src="./assets/fleatradelogo.svg" alt="Flea Trade Logo" width="230" height="50" />
+				</div>
+
+				<!-- Search box -->
+				<div class="search-box">
+					<input type="search" id="search-input" placeholder="Search" />
+				</div>
+
+				<!-- Navigation menu -->
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="messages.html">Messages</a></li>
+						<li><a href="my-posts.html">My Posts</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main content for index HTML starts here -->
+		<main>
+			<section class="section">
+				<div class="container">
+					<div class="cards-group">
+						<div class="about-flea-trade">
+							<h3>How was Flea Trade born?</h3>
+
+							<p>
+								In 2025, Flea Trade was created in response to the growing demand for second-hand goods. Inspired by one of the oldest forms of trade, we brought barter into the
+								modern world.
+							</p>
+
+							<p>Our platform lets you exchange items easily, fairly and sustainably.</p>
+						</div>
+
+						<div class="publish-new-item">
+							<h3>Publish a new item</h3>
+
+							<p>Share the items you do not longer use and exchange them for another.</p>
+
+							<a href="upload.html" class="orange-button">
+								<span>Add an item</span>
+							</a>
+						</div>
+
+						<div class="item-delivered">
+							<h3>Need an item delivered?</h3>
+
+							<p>Find the best deal for the pick up or delivery point.</p>
+
+							<a href="delivery.html" class="orange-button">
+								<span>Address</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- Making the interactive image slides for items near you -->
+
+			<section id="slider">
+				<div class="container">
+					<h2 class="h2">Items near you</h2>
+
+					<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+						<div class="splide__track">
+							<div class="splide__list">
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-1.jpg" alt="Slide Image 1" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-2.jpg" alt="Slide Image 2" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-3.jpg" alt="Slide Image 3" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-4.jpg" alt="Slide Image 4" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-5.jpg" alt="Slide Image 5" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+								<div class="splide__slide">
+									<div class="slide">
+										<img class="slide-image" src="./assets/slide-image-6.jpg" alt="Slide Image 6" />
+
+										<button class="message-btn">
+											<span>Message</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer with links. These are not interactive -->
+		<footer>
+			<ul>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Your privacy</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+
+		<!-- Slider JS -->
+		<!-- https://splidejs.com/guides/getting-started/ -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+
+		<!-- Slider config -->
+		<script>
+			let slider = new Splide('.splide', {
+				type: 'loop',
+				perPage: 4,
+				perMove: 1,
+				gap: '1rem',
+				pagination: false,
+				breakpoints: {
+					640: {
+						perPage: 1,
+					},
+					992: {
+						perPage: 2,
+					},
+					1200: {
+						perPage: 3,
+					},
+				},
+			});
+
+			slider.mount();
+		</script>
+	</body>
+</html>
